@@ -18,7 +18,7 @@ li>details {
 li>details[open] {
   box-shadow: inset 0 0 15px 1px lightgray, 3px 2px 5px 0 gray;
   border-color: lightgray;
-  background: #f9f9f9;
+  background: #fbfbfb;
   translate: -3px -2px;
 }
 
