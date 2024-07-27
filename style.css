@@ -1,0 +1,66 @@
+body, input, button {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+li {
+  list-style-type: none;
+}
+
+li>details {
+  border: 1px solid transparent;
+  border-radius: 2px;
+  padding: 10px 14px;
+  width: max-content;
+  box-shadow: inset 0 0 15px 1px transparent, 0 0 0 0 gray;
+  transition: 300ms;
+}
+
+li>details[open] {
+  box-shadow: inset 0 0 15px 1px lightgray, 3px 2px 5px 0 gray;
+  border-color: lightgray;
+  background: #f9f9f9;
+  translate: -3px -2px;
+}
+
+details>details {
+  font-size: 12px;
+  box-shadow: inset 0 0 0 0 gray;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  margin: 3px 0 9px 20px; 
+  padding: 2px 0 3px 4px;
+  transition: 300ms;
+}
+
+details>details[open] {
+  padding: 4px 0 3px 6px;
+  box-shadow: inset 3px 2px 5px 0 gray;
+  border-color: #dadada;
+  background: white;
+}
+
+details>fieldset {
+  border: none;
+  width: max-content;
+  padding: 10px 14px;
+  margin: 0;
+}
+
+details>ul {
+  padding: 9px 0 0 20px;
+}
+
+li>fieldset {
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  padding: 10px 14px;
+  width: max-content;
+  margin: 3px 0;
+}
+
+
+button {
+  border: 1px solid #9e9e9e;
+  border-radius: 2px;
+  font-size: 12px;
+}
