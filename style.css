@@ -27,7 +27,7 @@ details>details {
   box-shadow: inset 0 0 0 0 gray;
   border: 1px solid transparent;
   border-radius: 2px;
-  margin: 3px 0 9px 20px; 
+  margin: 3px 10px 9px 20px; 
   padding: 2px 0 3px 4px;
   transition: 300ms;
 }
@@ -37,6 +37,18 @@ details>details[open] {
   box-shadow: inset 3px 2px 5px 0 gray;
   border-color: #dadada;
   background: white;
+}
+
+[open]>summary>::before {
+  content: "hide";
+}
+
+:not([open])>summary>::before {
+  content: "show";
+}
+
+summary>span {
+  user-select: none;
 }
 
 details>fieldset {

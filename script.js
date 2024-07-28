@@ -125,15 +125,6 @@ function addList(name) {
       <details>
         <summary>
           <span> list actions</span>
-          <style>
-            [open]>summary>::before {
-              content: "hide";
-            }
-
-            :not([open])>summary>::before {
-              content: "show";
-            }
-          </style>
         </summary>
 
         <fieldset>
